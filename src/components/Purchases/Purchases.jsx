@@ -111,6 +111,7 @@ const Items = ({onClose, open}) => {
     
     return (
         <div className="login-page">
+          <h1>Vendor Purchases</h1>
             <form onSubmit={submit}>
                 <div className="itemName">
                     <input

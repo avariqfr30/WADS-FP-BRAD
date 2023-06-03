@@ -113,6 +113,7 @@ const Sales = ({onClose, open}) => {
     
     return (
         <div className="login-page">
+          <h1>Customer Orders</h1>
             <form onSubmit={submit}>
                 <div className="itemName">
                     <input

@@ -105,6 +105,7 @@ const Customers = ({onClose, open}) => {
     
     return (
         <div className="login-page">
+            <h1>Customer Details</h1>
             <form onSubmit={submit}>
             <div className="custName">
                     <input

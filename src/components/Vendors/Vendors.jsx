@@ -76,16 +76,17 @@ const Vendors = ({onClose, open}) => {
     
     return (
         <div className="login-page">
-            <form onSubmit={submit}>
-                <div className="vendorName">
-                    <input
-                        onChange={(e) => setVendorName(e.target.value)}
-                        type="vendorName"
-                        id="vendorName"
-                        required
-                    />
-                    <label  htmlFor="vendorName">Vendor Name</label>
-                </div>
+            <h1>Vendor Details</h1>
+                <form onSubmit={submit}>
+                    <div className="vendorName">
+                        <input
+                            onChange={(e) => setVendorName(e.target.value)}
+                            type="vendorName"
+                            id="vendorName"
+                            required
+                        />
+                        <label  htmlFor="vendorName">Vendor Name</label>
+                    </div>
 
                 {/* <div className="discount">
                     <input
@@ -97,65 +98,65 @@ const Vendors = ({onClose, open}) => {
                     <label  htmlFor="discount">Discount</label>
                 </div> */}
 
-                <div className="email">
-                    <input
-                        onChange={(e) => setEmail(e.target.value)}
-                        type="email"
-                        id="email"
-                        required
-                    />
-                    <label  htmlFor="email">Vendor Email</label>
-                </div>
+                    <div className="email">
+                        <input
+                            onChange={(e) => setEmail(e.target.value)}
+                            type="email"
+                            id="email"
+                            required
+                        />
+                        <label  htmlFor="email">Vendor Email</label>
+                    </div>
 
-                <div className="phoneNo">
-                    <input
-                        onChange={(e) => setPhoneNo(e.target.value)}
-                        type="phoneNo"
-                        id="phoneNo"
-                        required
-                    />
-                    <label  htmlFor="phoneNo">Phone No.</label>
-                </div>
+                    <div className="phoneNo">
+                        <input
+                            onChange={(e) => setPhoneNo(e.target.value)}
+                            type="phoneNo"
+                            id="phoneNo"
+                            required
+                        />
+                        <label  htmlFor="phoneNo">Phone No.</label>
+                    </div>
 
-                <div className="addr">
-                    <input
-                        onChange={(e) => setAddr(e.target.value)}
-                        type="addr"
-                        id="addr"
-                        required
-                    />
-                    <label  htmlFor="addr">Address</label>
-                </div>
+                    <div className="addr">
+                        <input
+                            onChange={(e) => setAddr(e.target.value)}
+                            type="addr"
+                            id="addr"
+                            required
+                        />
+                        <label  htmlFor="addr">Address</label>
+                    </div>
 
-                <div className="city">
-                    <input
-                        onChange={(e) => setCity(e.target.value)}
-                        type="city"
-                        id="city"
-                        required
-                    />
-                    <label  htmlFor="city">City</label>
-                </div>
+                    <div className="city">
+                        <input
+                            onChange={(e) => setCity(e.target.value)}
+                            type="city"
+                            id="city"
+                            required
+                        />
+                        <label  htmlFor="city">City</label>
+                    </div>
 
-                <div className="district">
-                    <input
-                        onChange={(e) => setDistrict(e.target.value)}
-                        type="district"
-                        id="district"
-                        required
-                    />
-                    <label  htmlFor="district">District</label>
-                </div>
+                    <div className="district">
+                        <input
+                            onChange={(e) => setDistrict(e.target.value)}
+                            type="district"
+                            id="district"
+                            required
+                        />
+                        <label  htmlFor="district">District</label>
+                    </div>
 
-                <div className="currentStatus">
-                    <input
-                        onChange={(e) => setCurrentStatus(e.target.value)}
-                        type="currentStatus"
-                        id="currentStatus"
-                        required
-                    />
-                    <label  htmlFor="currentStatus">Status</label>
-                </div>
+                    <div className="currentStatus">
+                        <input
+                            onChange={(e) => setCurrentStatus(e.target.value)}
+                            type="currentStatus"
+                            id="currentStatus"
+                            required
+                        />
+                        <label  htmlFor="currentStatus">Status</label>
+                    </div>
 
                 {/* {error && <img src={illustration} alt=""
                 className="status" />} */}
@@ -164,8 +165,8 @@ const Vendors = ({onClose, open}) => {
 
                 {error && <span className="error">{errorMsg}</span>} */}
 
-                <button type="submit">{"Input Data"}
-                </button>
+                    <button type="submit">{"Input Data"}
+                    </button>
 
                 {/* {NewUser ? (
                     <span className="user-stat">
@@ -182,9 +183,9 @@ const Vendors = ({onClose, open}) => {
                         }}>Sign Up</b>
                     </span>
                 )} */}
-            </form>
-        </div>
-    );
-};
+                </form>
+            </div>
+        );
+    };
 
 export default Vendors;
