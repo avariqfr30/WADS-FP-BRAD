@@ -79,6 +79,15 @@ const Customers = ({onClose, open}) => {
             district: district,
             currentStatus: currentStatus,
             created: Timestamp.now() });
+            console.log("Customer details added successfully!");
+            // Show a popup
+            const el = document.createElement("div");
+            el.className = "popup";
+            el.innerHTML = "Customer details added successfully!";
+            document.body.appendChild(el);
+            setTimeout(() => {
+                document.body.removeChild(el);
+            }, 2000);
         } catch (err) {
             alert(err);
         }

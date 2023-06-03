@@ -64,7 +64,7 @@ function Login() {
             {/* <img src={illustration} alt="" /> */}
 
             <h2 className="title">
-                Dashboard
+                Welcome to BRAD Admin Dashboard!
             </h2>
 
             <form onSubmit={submit}>

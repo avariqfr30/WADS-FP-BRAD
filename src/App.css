@@ -28,8 +28,18 @@
     #f3c6f1 90.85%
   );
 }
-
 .AppGlass {
+  display: grid;
+  height: 97%;
+  width: 97%;
+  background: var(--glass);
+  border-radius: 2rem;
+  gap: 16px;
+  grid-template-columns: 11rem auto 20rem;
+  overflow: hidden;
+}
+
+.AppGlass2 {
   display: flex;
   height: 97%;
   width: 97%;

@@ -45,7 +45,16 @@ const Items = ({onClose, open}) => {
             price: price,
             currentStatus: currentStatus,
             desc: desc
-        })
+        });
+        console.log("Item details added successfully!");
+        // Show a popup
+        const el = document.createElement("div");
+        el.className = "popup";
+        el.innerHTML = "Item details added successfully!";
+        document.body.appendChild(el);
+        setTimeout(() => {
+            document.body.removeChild(el);
+        }, 2000);
         } catch (err) {
             alert(err);
         }
