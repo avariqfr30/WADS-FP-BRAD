@@ -2,6 +2,10 @@
 
 An administration dashboard made for bakeries with database implementations and query system to easily help with workflow and analysis of inventory.
 
+DISCLAIMER : Some features are going to be worked on and reviewed since there are still plenty of ideas left to do.
+
+Check out our live website application on https://brad25023.firebaseapp.com/ :DD
+
 Made by :
 - Avariq Fazlur Rahman (2502043002) - L4BC :  Frontend Designer and Creation
 
