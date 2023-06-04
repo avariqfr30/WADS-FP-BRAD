@@ -9,6 +9,13 @@ Made by :
 
 - Bernard Choa (2502022414) - L4BC : Backend Design and Implementation
 
+# How to use BRAD :
+- Sign up by providing username, email, and password
+
+- Start by inputting the items (in the "Products" screen), customers (this, and Vednor, in the "Clients" screen), and vendor details first before creating a sale data.
+
+- Input sales data in the "Orders" data to denote the sales made by either a customer or a vendor (included each form for one another).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
