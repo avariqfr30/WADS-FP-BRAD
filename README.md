@@ -7,11 +7,11 @@ DISCLAIMER : Some features are going to be worked on and reviewed since there ar
 Check out our live website application on https://brad25023.firebaseapp.com/ :DD
 
 Made by :
-- Avariq Fazlur Rahman (2502043002) - L4BC :  Frontend Designer and Creation
+- Avariq Fazlur Rahman (2502043002) - L4BC :  Frontend Engineer
 
 - Bayu Hartho (2502013731) - L4BC : Frontend Visual Supervisor and Design
 
-- Bernard Choa (2502022414) - L4BC : Backend Design and Implementation
+- Bernard Choa (2502022414) - L4BC : Backend Engineer and Implementation
 
 # How to use BRAD :
 - Sign up by providing username, email, and password
