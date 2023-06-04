@@ -48,8 +48,18 @@ const Vendors = ({onClose, open}) => {
               city: city,
               district: district,
               currentStatus: currentStatus,
-              created: Timestamp.now() })
-            onClose();
+              created: Timestamp.now() });
+            //   onClose();
+            console.log("Vendor details added successfully!");
+            // Show a popup
+            const el = document.createElement("div");
+            el.className = "popup";
+            el.innerHTML = "Vendor details added successfully!";
+            document.body.appendChild(el);
+            setTimeout(() => {
+                document.body.removeChild(el);
+            }, 2000);
+            
         } catch (err) {
             alert(err);
         }

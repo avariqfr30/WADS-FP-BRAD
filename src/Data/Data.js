@@ -25,7 +25,7 @@ export const SidebarData = [
   },
   {
     icon: UilClipboardAlt,
-    heading: "Orders"
+    heading: "Products"
   },
   {
     icon: UilUsersAlt,
@@ -33,7 +33,7 @@ export const SidebarData = [
   },
   {
     icon: UilPackage,
-    heading: 'Products'
+    heading: 'Orders'
   },
 ];
 

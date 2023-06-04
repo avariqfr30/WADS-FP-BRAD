@@ -81,10 +81,19 @@ const Purchases = ({onClose, open}) => {
                 discount: discount,
                 stock: stock,
                 purchDate: Timestamp.now()
-             });
+             });console.log("Vendor sale added successfully!");
+             // Show a popup
+             const el = document.createElement("div");
+             el.className = "popup";
+             el.innerHTML = "Vendor sale added successfully!";
+             document.body.appendChild(el);
+             setTimeout(() => {
+                 document.body.removeChild(el);
+             }, 2000);
              await updateDoc(doc(db, 'users', userDocId, 'items', itemDocId), {
                 stock: currentStock + stock,
              });
+             
         } catch (err) {
             alert(err);
         };

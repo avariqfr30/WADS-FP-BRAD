@@ -1,15 +1,11 @@
 import "./Login.css";
-// import illustration from "../assets/illustration.png";
 import { useState, useEffect } from "react";
-// import warning from "../assets/warning.png";
-
 import {
     auth,
     db,
     registerWithEmailAndPassword,
     logInWithEmailAndPassword,
   } from "../Firebase";
-// import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 
 function Login() {
