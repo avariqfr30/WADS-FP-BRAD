@@ -3,9 +3,11 @@
 An administration dashboard made for bakeries with database implementations and query system to easily help with workflow and analysis of inventory.
 
 Made by :
-Avariq Fazlur Rahman (2502043002) - L4BC :  Frontend Designer and Creation
-Bayu Hartho (2502013731) - L4BC : Frontend Visual Supervisor and Design
-Bernard Choa (2502022414) - L4BC : Backend Design and Implementation
+- Avariq Fazlur Rahman (2502043002) - L4BC :  Frontend Designer and Creation
+
+- Bayu Hartho (2502013731) - L4BC : Frontend Visual Supervisor and Design
+
+- Bernard Choa (2502022414) - L4BC : Backend Design and Implementation
 
 # Getting Started with Create React App
 
