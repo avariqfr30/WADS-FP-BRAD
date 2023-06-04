@@ -1,4 +1,4 @@
-# WADS-FP-BRAD
+# Bread Reactive Administrative Dashboard - Final Project Website
 
 An administration dashboard made for bakeries with database implementations and query system to easily help with workflow and analysis of inventory.
 
