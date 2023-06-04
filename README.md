@@ -1,4 +1,4 @@
-# Bread Reactive Administrative Dashboard - Final Project Website
+# Bread Reactive Administrative Dashboard - Website made for bakeries
 
 An administration dashboard made for bakeries with database implementations and query system to easily help with workflow and analysis of inventory.
 
