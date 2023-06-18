@@ -9,6 +9,7 @@ import {
     registerWithEmailAndPassword,
     logInWithEmailAndPassword,
   } from "../Firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
 // import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 
@@ -17,7 +18,7 @@ function Login() {
     const [NewUser, setNewUser] = useState(true);
 
     const [username, setusername] = useState("");
-    const [email, setemail] = useState(""); 
+    const [email, setemail] = useState(null); 
     const [password, setpassword] = useState("");
     const [user, loading, errorAuthState] = useAuthState(auth);
 
@@ -39,7 +40,7 @@ function Login() {
                     seterrorMsg(errorMessage);
                 });
         } else {
-            logInWithEmailAndPassword(username, email, password)
+            signInWithEmailAndPassword(auth, email, password)
             .catch((error) => {
                 seterror(true)
                 const errorMessage = error.message;
@@ -71,7 +72,7 @@ function Login() {
                 {NewUser && (
                     <div className="username">
                         <input
-                            onChange={(e) => setusername(e.target.value)}
+                            onChange={(e) => setusername(String(e.target.value))}
                             type="username"
                             id="username"
                             required
@@ -82,7 +83,7 @@ function Login() {
 
                 <div className="email">
                     <input
-                        onChange={(e) => setemail(e.target.value)}
+                        onChange={(e) => setemail(String(e.target.value))}
                         type="email"
                         id="email"
                         required
@@ -115,6 +116,7 @@ function Login() {
                         Already have an account? <b onClick={() => {
                             setNewUser(false)
                             seterror(false)
+                            console.log("not yippie");
                         }}>Log In</b>
                     </span>
                 ) : (
@@ -122,6 +124,7 @@ function Login() {
                         Don't have an account? <b onClick={() => {
                             setNewUser(true)
                             seterror(true)
+                            console.log("yippie");
                         }}>Sign Up</b>
                     </span>
                 )}

@@ -120,7 +120,7 @@ const Items = ({onClose, open}) => {
                         id="price"
                         required
                     />
-                    <label  htmlFor="price">Price per Unit</label>
+                    <label  htmlFor="price">Price per Unit (in USD)</label>
                 </div>
 
                 <div className="currentStatus">

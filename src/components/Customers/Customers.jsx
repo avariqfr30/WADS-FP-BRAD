@@ -11,7 +11,7 @@ const Customers = ({onClose, open}) => {
     const [itemDocId, setItemDocId] = useState('');
 
     const [custName, setCustName] = useState('');
-    const [email, setEmail] = useState('');
+    const [email, setEmail] = useState(null);
     const [phoneNo, setPhoneNo] = useState('');
     const [addr, setAddr] = useState('');
     const [city, setCity] = useState('');
@@ -32,23 +32,7 @@ const Customers = ({onClose, open}) => {
         } catch(err) {
           console.log("we're so close");
         }
-      }, [user]);
-
-    // useEffect(() => {
-    //     try {
-    //       const q = query(collection(db, "users", userDocId, 'customers'), where("itemName", "==", itemName));
-    //       onSnapshot(q, (snapshot) => {
-    //         if (!snapshot.empty) {
-    //             snapshot.docs.forEach((doc) => {
-    //             setItemDocId(doc.id);
-    //             console.log(doc.data().itemId);
-    //           });
-    //         };
-    //       });
-    //     } catch(err) {
-    //         console.log("we're so close");
-    //     }
-    //   }, [user]);
+      }, [user, setUserDocId]);
 
 
     const submit = async (e) => {

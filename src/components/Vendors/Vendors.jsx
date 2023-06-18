@@ -10,7 +10,7 @@ const Vendors = ({onClose, open}) => {
     const [userDocId, setUserDocId] = useState(''); 
 
     const [vendorName, setVendorName] = useState('');
-    const [email, setEmail] = useState('');
+    const [email, setEmail] = useState(null);
     const [phoneNo, setPhoneNo] = useState('');
     const [addr, setAddr] = useState('');
     const [city, setCity] = useState('');

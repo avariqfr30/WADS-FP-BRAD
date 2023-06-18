@@ -16,8 +16,7 @@ const Sales = ({onClose, open}) => {
     const [custDocId, setCustDocId] = useState('');
     const [discount, setDiscount] = useState(0);
     const [stock, setStock] = useState(0);
-    const [currentStatus, setCurrentStatus] = useState('Inactive');
-    const [desc, setDesc] = useState('');
+    const [pricePU, setPricePU] = useState(0);
 
     const [currentStock, setCurrentStock] = useState(0);
 
@@ -47,13 +46,14 @@ const Sales = ({onClose, open}) => {
         if (!snapshot.empty) {
           snapshot.docs.forEach((doc) => {
             setItemDocId(doc.id);
+            setPricePU(doc.data().price);
             setCurrentStock(doc.data().stock);
           })
         }
       });
     } catch(err) {
         console.log("humana humana");
-    }});
+    }}, [userDocId, itemName]);
 
     useEffect(() => {
     try {
@@ -70,7 +70,7 @@ const Sales = ({onClose, open}) => {
       });
     } catch(err) {
         console.log("hummana hummana");
-    }});
+    }}, [userDocId, custName]);
 
     const submit = async (e) => {
         let saleUUID = uuid4();
@@ -79,7 +79,7 @@ const Sales = ({onClose, open}) => {
             await addDoc(collection(db, 'users', userDocId, 'sales'), {
                 saleId: saleUUID,
                 custId: custDocId,
-                itemId: itemDocId,
+                price: pricePU,
                 discount: discount,
                 stock: stock,
                 saleDate: Timestamp.now()
