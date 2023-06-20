@@ -86,8 +86,8 @@ const BasicTable = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row) => (
-              <TableRow key={row.trackingId} sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
+            {rows.map((row, index) => (
+              <TableRow key={index} sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
                 <TableCell component="th" scope="row">
                   {row.itemName}
                 </TableCell>
