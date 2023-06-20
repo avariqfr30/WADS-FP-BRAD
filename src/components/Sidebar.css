@@ -4,6 +4,7 @@
   position: relative;
   padding-top: 4rem;
   transition: all 300ms ease;
+  overflow-y: auto;
 }
 /* logo */
 .bars{
@@ -37,7 +38,26 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  flex-grow: 1;
+  padding-bottom: 2rem; /* Add padding-bottom to create space above the "Who's logged in?" section */
 }
+
+.currentUser {
+  margin-top: auto;
+  padding-top: 1rem; /* Add padding to adjust the top spacing */
+  padding-bottom: 3rem; /* Increase the padding-bottom value to move it lower */
+  font-size: 12px;
+  text-align: right; /* Add this line to align the text to the right */
+  white-space: normal;
+  word-break: break-word;
+}
+
+.currentUser .currentUserEmail {
+  font-size: 12px;
+  white-space: normal;
+  word-break: break-word;
+}
+
 .menuItem {
   display: flex;
   align-items: center;
@@ -116,4 +136,3 @@
     left: -60%;
   }
 }
-

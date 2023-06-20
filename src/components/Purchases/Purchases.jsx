@@ -79,7 +79,7 @@ const Purchases = ({onClose, open}) => {
             await addDoc(collection(db, 'users', userDocId, 'purchases'), {
                 purchId: purchUUID,
                 vendorId: vendorDocId,
-                price: pricePU,
+                pricePerUnit: pricePU,
                 discount: discount,
                 stock: stock,
                 purchDate: Timestamp.now()
