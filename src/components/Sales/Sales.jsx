@@ -5,6 +5,7 @@ import {onSnapshot, collection, doc, updateDoc, addDoc, Timestamp, query, where}
 import "./Sales.css";
 import { v4 as uuid4 } from "uuid";
 
+
 const Sales = ({onClose, open}) => {
     const [user, loading, error] = useAuthState(auth);
     const [userDocId, setUserDocId] = useState(''); 
